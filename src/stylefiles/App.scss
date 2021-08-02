@@ -1,0 +1,109 @@
+.app {
+  padding: 10vh;
+  background-color: rgb(124, 1, 1);
+}
+
+.home {
+  color: gray;
+}
+
+.linkNames {
+  color: white;
+  text-decoration: none;
+  writing-mode: vertical-rl;
+  border-radius: 10px;
+  &.first {
+    width: 100px;
+    height: 80%;
+    background-color: rgb(1, 85, 1);
+    font-size: 60px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  &.second {
+    width: 100px;
+    height: 80%;
+    background-color: rgb(64, 95, 64);
+    font-size: 60px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.bookShelf {
+  height: 80vh;
+  background-color: black;
+}
+
+//-------------basicBase
+.basicBase {
+  padding: 30px;
+  background-color: rgb(194, 191, 12);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  .hoDuGuaZa {
+    width: 500px;
+    height: 500px;
+  }
+  .whitePaper {
+    padding: 30px;
+    background-color: white;
+    font-size: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(5, 100px);
+    grid-template-areas:
+      'labelName divName .'
+      'labelBirth divBirth  .'
+      'labelStack divStack .'
+      'labelSchool divSchool1 divSchool1'
+      '. divSchool2 divSchool2';
+  }
+}
+.labelName {
+  grid-area: labelName;
+}
+.divName {
+  grid-area: divName;
+}
+.labelBirth {
+  grid-area: labelBirth;
+}
+.divBirth {
+  grid-area: divBirth;
+}
+.labelStack {
+  grid-area: labelStack;
+}
+.divStack {
+  grid-area: divStack;
+}
+.labelSchool {
+  grid-area: labelSchool;
+}
+.divSchool1 {
+  grid-area: divSchool1;
+}
+.divSchool2 {
+  grid-area: divSchool2;
+}
+//-------------exitLink
+.exitLink {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  right: 15vh;
+  bottom: 15vh;
+  text-decoration: none;
+  button {
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+}

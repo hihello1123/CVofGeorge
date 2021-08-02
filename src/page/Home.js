@@ -3,8 +3,13 @@ import { Link } from 'react-router-dom';
 
 function Home() {
   return (
-    <div className="Home">
-      <Link to="/Basic">기본 정보</Link>
+    <div className="home">
+      <Link className="linkNames first" to="/Basic">
+        Basic Profiles
+      </Link>
+      <Link className="linkNames second" to="/Sherlock">
+        Sherlock
+      </Link>
     </div>
   );
 }
