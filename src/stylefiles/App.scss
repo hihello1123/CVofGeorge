@@ -12,6 +12,7 @@
   text-decoration: none;
   writing-mode: vertical-rl;
   border-radius: 10px;
+  cursor: pointer;
   &.first {
     width: 100px;
     height: 80%;
@@ -46,8 +47,7 @@
   justify-content: space-around;
 
   .hoDuGuaZa {
-    width: 500px;
-    height: 500px;
+    height: 70vh;
   }
   .whitePaper {
     padding: 30px;
@@ -91,6 +91,31 @@
 }
 .divSchool2 {
   grid-area: divSchool2;
+}
+
+//-------------sherlock
+.sherlockBase {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1;
+  background-color: green;
+  height: 87%;
+  padding: 50px;
+  line-height: 35px;
+}
+.sherlockPage {
+  width: 100%;
+  padding: 50px;
+  background-color: white;
+  font-size: 2vw;
+  &_1 {
+    border-right: dotted 2px black;
+  }
+  &_lastline {
+    padding-top: 20px;
+    font-size: 2.5vw;
+    line-height: 50px;
+  }
 }
 //-------------exitLink
 .exitLink {
